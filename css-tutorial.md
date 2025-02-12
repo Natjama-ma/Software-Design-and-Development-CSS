@@ -235,8 +235,21 @@ div > p {
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        /* การใช้ Element Selector */
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="menu-item">หน้าแรก</a></li>
+            <li><a href="#" class="menu-item"id="active">สินค้า</a></li>
+            <li><a href="#" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="#" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+```
+``` /* การใช้ Element Selector */
         nav {
             background-color: #333;
             padding: 15px;
@@ -273,19 +286,6 @@ div > p {
             background-color: #ff00e1;
             border-radius: 3px;
         }
-    </style>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#" class="menu-item">หน้าแรก</a></li>
-            <li><a href="#" class="menu-item"id="active">สินค้า</a></li>
-            <li><a href="#" class="menu-item">เกี่ยวกับเรา</a></li>
-            <li><a href="#" class="menu-item">ติดต่อ</a></li>
-        </ul>
-    </nav>
-</body>
-</html>
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
@@ -625,12 +625,80 @@ border: 1px solid black;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+```<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&family=Kanit:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stats-container">
+        <div class="stat-box">
+            <div class="stat-number">1,234</div>
+            <div class="stat-label">ผู้ใช้งาน</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">5.6K</div>
+            <div class="stat-label">ยอดขาย</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">ความพึงพอใจ</div>
+        </div>
+    </div>
+</body>
+</html>
 ```
-```css
-[วางโค้ด CSS ที่นี่]
+```
+.stats-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .stat-box {
+            flex: 1;
+            margin: 0 10px;
+            padding: 1.5rem;
+            text-align: center;
+            background-color: rgb(253, 251, 251);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #e50eac;
+            margin-bottom: 0.5rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .stat-label {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            color: #f38080;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .stats-container {
+                flex-direction: column;
+            }
+
+            .stat-box {
+                margin: 1rem 0;
+            }
+        }
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+
+![image](https://github.com/user-attachments/assets/ed07e290-6335-4f62-8c22-3603827b4925)
 
 [](#การทดลองที่-5-การจัดการข้อความและฟอนต์)
 ## การทดลองที่ 5: การจัดการข้อความและฟอนต์

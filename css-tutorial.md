@@ -392,9 +392,144 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('/images/products/01.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">สินค้าตัวอย่าง</h2>
+                <p class="product-price">฿1,999</p>
+                <p class="product-description">
+                    Barbie and Secret Door<br>บาร์บี้กับประตูพิศวง
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('/images/products/02.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">สินค้าตัวอย่าง</h2>
+                <p class="product-price">฿1,999</p>
+                <p class="product-description">
+                    Barbie as The Princess and the Pauper<br>บาร์บี้ เจ้าหญิงกับสาวผู้ยากไร้
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('/images/products/03.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">สินค้าตัวอย่าง</h2>
+                <p class="product-price">฿1,999</p>
+                <p class="product-description">
+                    Barbie as Rapunzel<br>บาร์บี้ เจ้าหญิงราพันเซล 
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('/images/products/04.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">สินค้าตัวอย่าง</h2>
+                <p class="product-price">฿1,999</p>
+                <p class="product-description">
+                    Barbie in The Pink Shoes<br>บาร์บี้ มหัศจรรย์รองเท้าสีชมพู 
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('/images/products/05.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">สินค้าตัวอย่าง</h2>
+                <p class="product-price">฿1,999</p>
+                <p class="product-description">
+                    Barbie as The Island Princess<br>บาร์บี้ เจ้าหญิงแห่งเกาะหรรษา
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+```cssbody {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-title {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #007bff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-description {
+    color: #666;
+    font-size: 14px;
+}
+
+.product-button {
+    display: block;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.product-button:hover {
+    background: linear-gradient(to right, #0056b3, #003980);
+}
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+
+![image](https://github.com/user-attachments/assets/48c875fa-6b3b-4292-87f1-823a44738ef2)
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
